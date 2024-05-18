@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {DataService} from "../../services/data.service";
 
 @Component({
@@ -8,7 +8,7 @@ import {DataService} from "../../services/data.service";
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
 })
-export class SkillsComponent {
+export class SkillsComponent implements OnInit{
 
   pageContent: string;
 
@@ -16,11 +16,11 @@ export class SkillsComponent {
     this.pageContent = '';
   }
 
-  // ngOnInit(): void {
-  //   this.dataService.getPageContent('https://passeport.dev/fr/p/ad0c3409-8ab8-4cc9-9b02-9189fb3e564f')
-  //     .subscribe(
-  //       data => this.pageContent = data,
-  //       error => console.error('There was an error!', error)
-  //     );
-  // }
+  ngOnInit(): void {
+    this.dataService.getPageContent('https://passeport.dev/fr/p/ad0c3409-8ab8-4cc9-9b02-9189fb3e564f')
+      .subscribe(
+        data => this.pageContent = data,
+        error => console.error('There was an error!', error)
+      );
+  }
 }
