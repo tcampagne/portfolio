@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class ResumeComponent {
 
   downloadResume() {
-    const url = '/assets/CV_Campagne_Thibault.pdf'; // Remplacez par le chemin réel du document
+    const url = '/assets/CV_Campagne_Thibault.pdf';
     window.open(url, '_blank');
   }
 }

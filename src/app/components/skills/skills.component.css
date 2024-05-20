@@ -5,16 +5,64 @@
   position: fixed;
   left: 0;
   right: 0;
+  margin-left: 300px;
+}
+
+.skills-content-mobile {
+  display: none;
+}
+
+#skills {
+  margin-top: 10%;
+}
+
+.passport-dev {
+  display: none;
 }
 
 iframe {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   border: none;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+section.resume-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+}
+section.resume-section .resume-section-content {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 @media (max-width: 1199px) {
   .passport {
-    margin-top: 437px;
+    display: none;
+  }
+
+  .skills-content-mobile {
+    display: block;
   }
 }
