@@ -13,19 +13,5 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 })
 export class SidebarComponent {
 
-  // @ViewChild('mobile-nav-toggle') mobileNavToggle: ElementRef;
-
   constructor(private elementRef: ElementRef<HTMLElement>) {}
-
-  ngOnInit() {
-    // const element = document.getElementsByTagName('body');
-    // element.
-  }
-
-  openNav() {
-    // select('body').classList.toggle('mobile-nav-active')
-    // this.classList.toggle('bi-list')
-    // this.classList.toggle('bi-x')
-
-  }
 }

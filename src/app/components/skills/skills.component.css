@@ -66,3 +66,7 @@ section.resume-section .resume-section-content {
     display: block;
   }
 }
+
+.btn {
+  background-color: #149ddd;
+}
