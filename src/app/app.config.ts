@@ -3,7 +3,8 @@ import {provideRouter, withViewTransitions} from '@angular/router';
 
 import { routes } from './app.routes';
 import {provideHttpClient} from "@angular/common/http";
+import { provideClientHydration } from '@angular/platform-browser';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes, withViewTransitions()), provideHttpClient()]
+  providers: [provideRouter(routes, withViewTransitions()), provideHttpClient(), provideClientHydration()]
 };
