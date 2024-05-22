@@ -1,5 +1,8 @@
-import {Component, ElementRef, ViewChild} from '@angular/core';
+import {Component} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
+import {faFacebookSquare, faGithubSquare, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faHome, faIdBadge, faBrain, faIdCard, faLightbulb} from "@fortawesome/free-solid-svg-icons";
+import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 
 @Component({
   selector: 'app-sidebar',
@@ -7,11 +10,18 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
   templateUrl: './sidebar.component.html',
   imports: [
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    FaIconComponent
   ],
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
-
-  constructor(private elementRef: ElementRef<HTMLElement>) {}
+  faLinkedin = faLinkedin;
+  faGithubSquare = faGithubSquare;
+  faFacebookSquare = faFacebookSquare;
+  faHome = faHome;
+  faIdBadge = faIdBadge;
+  faBrain = faBrain;
+  faIdCard = faIdCard;
+  faLightbulb = faLightbulb;
 }

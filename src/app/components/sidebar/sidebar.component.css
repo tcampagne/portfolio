@@ -106,8 +106,8 @@ main {
   font-size: 15px;
 }
 
-.nav-menu a i,
-.nav-menu a:focus i {
+.nav-menu a fa-icon,
+.nav-menu a:focus fa-icon {
   font-size: 24px;
   padding-right: 8px;
   color: #6f7180;
@@ -121,10 +121,10 @@ main {
   color: #fff;
 }
 
-.nav-menu a:hover i,
-.nav-menu .active i,
-.nav-menu .active:focus i,
-.nav-menu li:hover>a i {
+.nav-menu a:hover fa-icon,
+.nav-menu .active fa-icon,
+.nav-menu .active:focus fa-icon,
+.nav-menu li:hover>a fa-icon {
   color: #149ddd;
 }
 

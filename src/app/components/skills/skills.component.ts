@@ -1,14 +1,25 @@
-import {AfterViewInit, Component, HostListener, OnInit, ViewChild} from '@angular/core';
-import {DataService} from "../../services/data.service";
+import {Component} from '@angular/core';
+import {faJava, faAngular, faHtml5, faCss3Alt, faJsSquare, faReact, faNodeJs, faNpm} from "@fortawesome/free-brands-svg-icons";
+import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [
+    FaIconComponent
+  ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
+  faJava = faJava;
+  faAngular = faAngular;
+  faHtml5 = faHtml5;
+  faCss3Alt = faCss3Alt;
+  faJsSquare = faJsSquare;
+  faReact = faReact;
+  faNodeJs = faNodeJs;
+  faNpm = faNpm;
 
   constructor() {
   }

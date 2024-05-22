@@ -176,8 +176,8 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar a i,
-.navbar a:focus i {
+.navbar a fa-icon,
+.navbar a:focus fa-icon {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
